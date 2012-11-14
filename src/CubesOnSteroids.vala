@@ -42,7 +42,7 @@ public class CubesOnSteroids {
     public static int main (string[] args) {
         SDL.init (InitFlag.VIDEO);
 
-        var main = new CubeRunner ();
+        var main = new CubesOnSteroids ();
         main.run ();
 
         SDL.quit ();
