@@ -58,6 +58,7 @@ private class PlayState : State {
         max_size = (int) Math.floor(8.966497462 * Math.pow(10, -3) * player.score - 4.121827411 * Math.pow(10, -2));
 
         player.score++;
+        SDL.WindowManager.set_caption (player.score.to_string (), player.score.to_string ());
     }
 
     public override void draw () {
