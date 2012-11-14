@@ -29,11 +29,6 @@ private class PlayState : State {
         /* Did player quit? */
         main.done = keystates[KeySymbol.ESCAPE] == 1 || event.type == EventType.QUIT;
 
-        cubes.foreach (() => {
-
-            });
-
-        // FIXME implement cubes.foreach
         for (int i = 0; i < cubes.length (); i++) {
             Cube current_cube = cubes.nth_data (i);
             current_cube.update ();
@@ -68,7 +63,6 @@ private class PlayState : State {
     public override void draw () {
         glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // FIXME implement cubes.foreach
         for (int i = 0; i < cubes.length (); i++)
             cubes.nth_data (i).draw ();
 
