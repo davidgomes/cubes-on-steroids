@@ -1,7 +1,7 @@
 using GL;
 using SDL;
 
-public class CubeRunner {
+public class CubesOnSteroids {
 
     public  unowned SDL.Screen screen;
     private const int DELAY = 10;
