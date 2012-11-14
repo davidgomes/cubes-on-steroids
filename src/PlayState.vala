@@ -3,7 +3,7 @@ using GL;
 
 private class PlayState : State {
 
-    CubeRunner main;
+    CubesOnSteroids main;
 
     private List<Cube> cubes;
 
@@ -11,7 +11,7 @@ private class PlayState : State {
 
     int max_size = 0;
 
-    public PlayState (CubeRunner _main) {
+    public PlayState (CubesOnSteroids _main) {
         main = _main;
         start();
     }
